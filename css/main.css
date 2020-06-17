@@ -2,3 +2,17 @@ html, body{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.title{
+    margin: 20px 0;
+}
+
+.res{
+    margin-top: 20px;
+}
+.alert{
+    display: none;
+    position: fixed;
+    top: 20px;
+    width: 60%;
+}

@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Bang</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="image/favicon-32x32.png" sizes="32x32">
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 
@@ -11,7 +12,31 @@
 </head>
 <body>
 <div class='container'>
-    <h2>香水有毒</h2>
+    <h3 class="title">香水税费计算</h3>
+    <form class="form-inline">
+        <label class="my-1 mr-2" for="vol">容量(ml)</label>
+        <select class="custom-select my-1 mr-sm-2" id="vol">
+            <option selected>30</option>
+            <option>50</option>
+            <option>75</option>
+            <option>100</option>
+            <option>120</option>
+            <option>150</option>
+            <option>180</option>
+        </select>
+
+        <label class="sr-only" for="price">价格</label>
+        <input type="number" class="form-control my-1 mr-sm-2" id="price" placeholder="价格">
+
+        <button type="button" id="sub" class="btn btn-primary my-1">计算</button>
+    </form>
+    <div class="res">
+        <h5>应付税款：<span class="text-success" id="tax">--</span></h5>
+        <h5>总价：<span class="text-primary" id="cost">--</span></h5>
+    </div>
+    <div class="alert alert-warning" role="alert">
+        请先填写价格！
+    </div>
 </div>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
