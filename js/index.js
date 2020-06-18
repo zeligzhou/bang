@@ -1,4 +1,4 @@
-// (function() {
+$(function() {
     var taxObj = {
         rate: 0.2,
         tax: 0,
@@ -19,7 +19,7 @@
             $('#cost').text(costObj.cost);
         }
     });
-// });
+});
 
 
 function calTax(vol, price) {
